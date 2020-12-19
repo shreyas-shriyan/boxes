@@ -1,14 +1,17 @@
 
+// function to handle stacking of boxes on click.
+
 const handleClick = (e) => {
     let item = e.target
+
     if (item.innerHTML == "5") {
         // clicking on box five is unhandled case.
     }
-    else if (item.style.zIndex == "2") {
-        item.style.zIndex = "0"
+    else if (item.style.zIndex == "0") {
+        item.style.zIndex = "1"
     }
     else {
-        item.style.zIndex = "2"
+        item.style.zIndex = "0"
     }
 }
 
